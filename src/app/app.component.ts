@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipes-app';
+  featureLoaded:string = 'recipe';
+
+  onNavigate(feature: string){
+    this.featureLoaded = feature;
+  }
 }
