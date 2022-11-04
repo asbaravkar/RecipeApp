@@ -22,6 +22,10 @@ export class RecipeService {
     return this.recipes.slice(); // share copy
   }
 
+  getRecipe(id:number){
+    return this.recipes.slice()[id];
+  }
+
   sendItemsToList(ingredients:Ingredient[]){
     this.slService.addIngredients(ingredients);
   }
